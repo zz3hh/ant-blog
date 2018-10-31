@@ -1,0 +1,70 @@
+@import '~antd/lib/style/themes/default.less';
+
+.ftlinkbox {
+  padding: 0 16px;
+  margin: 40px 0 40px 0;
+  text-align: center;
+
+  &.left{
+    text-align: left;
+  }
+
+  .links {
+    margin-bottom: 8px;
+
+    a {
+      color: @text-color-secondary;
+      transition: all 0.3s;
+
+      &:hover {
+        color: @text-color;
+      }
+    }
+  }
+  
+  .linkItem {
+    display: inline;
+  }
+
+  .copyright {
+    color: @text-color-secondary;
+    font-size: @font-size-base;
+  }
+}
+
+.ontherinfo {
+  margin: 43px 0 42px 0;
+  text-align: right;
+
+  .ftendlinks {
+    background: url("@/assets/css-images/footerend.png") no-repeat;
+    display: inline-block;
+    height: 40px;
+    margin: 0px 5px;
+
+    &.ftendlinksa {
+      background-position: -349px 0px;
+      width: 113px;
+    }
+
+    &.ftendlinksb {
+      background-position: -227px 0px;
+      width: 113px;
+    }
+
+    &.ftendlinksc {
+      background-position: -113px 0px;
+      width: 108px;
+    }
+
+    &.ftendlinksd {
+      background-position: 0px 0px;
+      width: 103px;
+    }
+
+    &.firstchild {
+      margin-right: 0px;
+    }
+  }
+}
+

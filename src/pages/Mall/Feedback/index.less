@@ -1,0 +1,95 @@
+@import '~antd/lib/style/themes/default.less';
+
+.feedbackMainBox {
+  background-color: #2db8ad;
+  padding-bottom: 150px;
+}
+
+.feedbackformbox {
+
+  :global {
+    .ant-form-item-label {
+      margin-bottom: 5px;
+    }
+
+    .ant-radio-checked .ant-radio-inner {
+      border-color: #2db8ad;
+
+      &::after{
+        background-color: #2db8ad;
+      }
+    }
+  }
+}
+
+.feedbackTitle {
+  font-size: 46px;
+  color: #FFFFFF;
+  font-weight: bold;
+  text-align: center;
+  height: 150px;
+  line-height: 150px;
+  margin-bottom: 0;
+}
+
+.feedbackBox {
+  background-color: #ffffff;
+  padding: 50px;
+  padding-bottom: 20px;
+  width: 880px;
+  margin: 0px auto;
+}
+
+.feedbackWelcome {
+  font-size: 14px;
+  color: #666666;
+  height: 20px;
+  line-height: 20px;
+  margin-bottom: 5px;
+}
+
+.feddbackNotice {
+  font-size: 14px;
+  color: #666666;
+  height: 20px;
+  line-height: 20px;
+  text-indent: 30px;
+}
+
+.feedbackSubmit {
+  display: block;
+  width: 110px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background-color: #2db8ad;
+  color: #ffffff;
+  border-radius: 3px;
+  font-size: 18px;
+  font-weight: bold;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  margin: 15px;
+  margin-left: 0;
+  border-color: transparent;
+
+  &:hover {
+    background-color: #31CFC2;
+    color: #ffffff;
+  }
+
+  &:active{
+    background-color: #17A398;
+    color: #ffffff;
+  }
+}
+
+.footerbox {
+  width: 1180px;
+  margin: 0px auto;
+  padding-bottom: 20px;
+
+  .textLeft {
+    text-align: left;
+  }
+}

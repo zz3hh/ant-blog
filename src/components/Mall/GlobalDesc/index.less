@@ -1,0 +1,38 @@
+@import '~antd/lib/style/themes/default.less';
+
+.virtuebox {
+  margin: 30px 0px;
+
+  .boxItem {
+    background: url(@/assets/css-images/btn_circle.png) no-repeat center center;
+    height: 52px;
+    line-height: 52px;
+    width: 52px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+
+    &.itema {
+      background-position: 0px 0px;
+    }
+
+    &.itemb {
+      background-position: -295px 0px;
+    }
+
+    &.itemc {
+      background-position: -591px -1px;
+    }
+
+    &.itemd {
+      background-position: -886px -1px;
+    }
+  }
+
+  span {
+    display: block;
+    font-size: 18px;
+    color: #3c3c3c;
+    line-height: 50px;
+    text-align: center;
+  }
+}

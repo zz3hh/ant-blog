@@ -1,0 +1,154 @@
+@import '~antd/lib/style/themes/default.less';
+
+.baseView {
+  display: flex;
+  padding-top: 12px;
+
+  .left {
+    max-width: 448px;
+    min-width: 200px;
+    .avatar_title {
+      height: 22px;
+      font-size: @font-size-base;
+      color: @heading-color;
+      line-height: 22px;
+      margin-bottom: 8px;
+    }
+    .avatar {
+      width: 144px;
+      height: 144px;
+      margin-bottom: 12px;
+      overflow: hidden;
+      img {
+        width: 100%;
+      }
+    }
+    .button_view {
+      width: 144px;
+      text-align: center;
+    }
+  }
+  .right {
+    flex: 1;
+    padding-left: 14px;
+  }
+}
+
+.basicTopBox {
+  display: flex;
+  padding: 30px 0 25px 20px;
+  .basicLevelFont {
+    padding-top: 5px;
+    height: auto;
+    width: 160px;
+    font-size: 14px;
+    color: #3C3C3C;
+
+    em {
+      display: inline-block;
+      margin-bottom: 5px;
+      float: left;
+      font-style: inherit;
+      line-height: 15px;
+    }
+
+    .levelBox {
+      display: inline-block;
+      margin-bottom: 5px;
+      height: 15px;
+      width: 40px;
+
+      span {
+        display: block;
+        height: 15px;
+        width: 40px;
+        background-image: url(@/assets/css-images/user_level_ico.png);
+        background-repeat: no-repeat;
+        &.level2 {
+          background-position: 0 -50px;
+        }
+      }
+    }
+    .userExpNow {
+      color: #ff5657;
+      font-weight: 700;
+    }
+  }
+
+  .basicLevelNumer {
+    flex: 1;
+    padding: 0 15px;
+    .basicLevelNumerBox {
+      
+      .basicExpLevel {
+        position: relative;
+        top: 0;
+        left: 0;
+        margin: 0 auto;
+        height: 26px;
+        width: 100%;
+        border: 1px solid #E6E6E6;
+        border-radius: 3px;
+        .basicLevelCover {
+          position: relative;
+          height: 24px;
+          width: 0;
+          background: url(@/assets/css-images/exp-bar.jpg) no-repeat;
+        }
+      }
+  
+      .basiclevelBox {
+        position: relative;
+        margin: 10px auto 0;
+        height: 40px;
+        padding-inline-start: 0;
+        li {
+          position: absolute;
+          top: 0;
+          padding-top: 25px;
+          height: 15px;
+          width: 55px;
+          background-image: url(@/assets/css-images/exp-level.png);
+          background-repeat: no-repeat;
+          color: #969696;
+          font-size: 12px;
+          line-height: 15px;
+          text-align: center;
+          &.basiclevela {
+            left: -18px;
+            background-position: 20px 0;
+          }
+          &.basiclevelb {
+            left: 17%;
+            background-position: -80px 0;
+          }
+          &.basiclevelc {
+            left: 46%;
+            background-position: -180px 0;
+          }
+          &.basicleveld {
+            left: 85%;
+            background-position: -280px 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: @screen-xl) {
+  .baseView {
+    flex-direction: column-reverse;
+
+    .right {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 448px;
+      .avatar_title {
+        display: none;
+      }
+    }
+  }
+}
