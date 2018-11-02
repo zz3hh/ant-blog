@@ -91,6 +91,22 @@ export default [
             path: '/mall/user/orderlist',
             component: './Mall/UserCenter/BasicInfo',
           },
+          {
+            path: '/mall/user/password',
+            component: './Mall/UserCenter/PassWord',
+          },
+          {
+            path: '/mall/user/safety',
+            component: './Mall/UserCenter/Safety',
+          },
+          {
+            path: '/mall/user/collect',
+            component: './Mall/UserCenter/Collect',
+          },
+          {
+            path: '/mall/user/exchange',
+            component: './Mall/UserCenter/Exchange',
+          },
         ]
       }
     ],
@@ -110,6 +126,10 @@ export default [
           path: '/clubAdmin/post/list',
           name: 'list',
           component: './ClubAdmin/index',
+        },{
+          path: '/clubAdmin/post/add',
+          name: 'add',
+          component: './Mall/UserCenter/PostView',
         }]
       },
       {

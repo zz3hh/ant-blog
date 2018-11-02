@@ -39,7 +39,7 @@ const GlobalOther = ({ className }) => {
       <a href="javascript:;" className={classNames(styles.ftendlinks,styles.ftendlinksa,styles.firstchild)}></a>
       <a href="javascript:;" className={classNames(styles.ftendlinks,styles.ftendlinksb)}></a>
       <a href="javascript:;" className={classNames(styles.ftendlinks,styles.ftendlinksc)}></a>
-      <a href="javascript:;" className={classNames(styles.ftendlinks,styles.ftendlinksd)}></a>
+      <a href="javascript:;" className={classNames(styles.ftendlinks,styles.ftendlinks)}></a>
     </div>
   );
 };

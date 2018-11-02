@@ -1,0 +1,123 @@
+@import '~antd/lib/style/themes/default.less';
+
+.exchangebox {
+
+  .leftBox {
+    border: #e6e6e6 1px solid;
+
+    .usercenterIntegral {
+      padding: 20px;
+      padding-bottom: 10px;
+      border-bottom: #e6e6e6 1px dotted;
+    }
+    .integralNumber {
+      font-size: 16px;
+      color: #3c3c3c;
+      margin-bottom: 10px;
+      
+
+      span {
+        color: #FF5657;
+        font-weight: bold;
+      }
+    }
+
+    .integralNotice {
+      display: flex;
+
+      .integralNoticespan {
+        font-size: 12px;
+        color: #969696;
+        line-height: 20px;
+        flex: 1;
+      }
+  
+      .integralNoticep {
+        font-size: 12px;
+        color: #969696;
+        line-height: 20px;
+      }
+    }
+
+    .integralRatio {
+      font-size: 12px;
+      color: #969696;
+      line-height: 20px;
+      margin-top: 15px;
+    }
+    .goIntegralcenter {
+      display: block;
+      background-color: #2db8ad;
+      text-align: center;
+      height: 50px;
+      line-height: 50px;
+      margin: 20px;
+      font-size: 18px;
+      color: #ffffff;
+      border-radius: 3px;
+      text-decoration: none;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+
+      &:hover {
+        background-color: #31cfc2;
+        color: #FFFFFF;
+      }
+      &:active{
+        background-color: #17a398;
+        color: #FFFFFF;
+      }
+    }
+  }
+
+  .rightBox {
+    padding: 15px;
+    border: #e6e6e6 1px solid;
+
+    .rightHeaderTitle {
+      font-size: 16px;
+      color: #3c3c3c;
+      margin-bottom: 15px;
+    }
+
+    .goodsBox {
+      border: #FFFFFF 1px solid;
+
+      &:hover {
+        border: #2db8ad 1px solid;
+      }
+      .imgBox {
+        width: 100%;
+        height: 0;
+        padding-bottom: 100%;
+
+        .goodsPicture {
+          display: block;
+          width: 100%;
+        }
+      }
+      .goodsName {
+        font-size: 12px;
+        color: #3c3c3c;
+        line-height: 35px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-align: center;
+      }
+    }
+  }
+}
+
+.exchangeList {
+  margin-top: 25px;
+
+  :global {
+    .ant-table-thead th {
+      text-align: center;
+      font-size: 12px;
+      color: #666666;
+    }
+  }
+}
+

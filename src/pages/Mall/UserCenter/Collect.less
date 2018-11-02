@@ -1,0 +1,79 @@
+@import '~antd/lib/style/themes/default.less';
+.collect {
+  :global {
+    .ant-card-head {
+      padding: 0;
+    }
+  }
+
+  .goodsBox {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 12px;
+    border: #FFFFFF 1px solid;
+
+    .collectremove {
+      background: url(@/assets/css-images/goods-collectremove.png) no-repeat;
+      display: none;
+      width: 28px;
+      height: 28px;
+      position: absolute;
+      top: 5px;
+      right: 5px;
+    }
+
+    &:hover {
+      border: #2db8ad 1px solid;
+
+      .collectremove {
+        display: block;
+      }
+    }
+    .goodsImgBox {
+      width: 100%;
+      height: 0;
+      padding-bottom: 100%;
+
+      .goodsImg {
+        display: block;
+        width: 100%;
+      }
+    }
+
+    .goodsName {
+      padding: 5px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      /* autoprefixer: off */
+      -webkit-box-orient: vertical;
+      /* autoprefixer: on */
+    }
+
+    .goodsDesc {
+      display: flex;
+      justify-content:space-between;
+      overflow: hidden;
+      padding: 5px 10px;
+      .price {
+        font-family: verdana, arial;
+        color: #ff5657;
+        font-size: 16px;
+        span {
+          color: #999999;
+          font-size: 12px;
+        }
+      }
+
+      .seller {
+        color: #333333;
+        font-size: 16px;
+        span {
+          color: #999999;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}

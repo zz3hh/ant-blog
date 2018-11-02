@@ -20,14 +20,17 @@ class BaseView extends Component {
     const menuMap = {
       basicinfo: "基本信息",
       address: "收货地址",
-      orderlist: "我的订单"
+      orderlist: "我的订单",
+      password: "修改密码",
+      safety: "安全设置",
+      collect: "我的收藏"
     };
 
     const key = location.pathname.replace(`${match.path}/`, '');
     this.state = {
       mode: 'inline',
       menuMap,
-      openKeys:["sub1"],
+      openKeys: (key === 'password' || key === 'safety') ? ["sub4"] : ["sub1"],
       selectKey: menuMap[key] ? key : 'basicinfo',
     }
   }
@@ -65,7 +68,7 @@ class BaseView extends Component {
 
   render() {
     const { children, currentUser } = this.props;
-    const { mode, selectKey,openKeys } = this.state;
+    const { mode, selectKey, openKeys } = this.state;
     return (
       <GridContent>
         <div
@@ -79,7 +82,7 @@ class BaseView extends Component {
               <SubMenu key="sub1" title={<span><Icon type="mail" /><span>我的账号</span></span>}>
                 <Menu.Item key="basicinfo">基本信息</Menu.Item>
                 <Menu.Item key="address">收货地址</Menu.Item>
-                <Menu.Item key="3">提现设置</Menu.Item>
+                <Menu.Item key="collect">提现设置</Menu.Item>
                 <Menu.Item key="4">第三方绑定</Menu.Item>
               </SubMenu>
               <SubMenu key="sub2" title={<span><Icon type="appstore" /><span>我的社区</span></span>}>
@@ -90,8 +93,8 @@ class BaseView extends Component {
                 <Menu.Item key="64">消息中心</Menu.Item>
               </SubMenu>
               <SubMenu key="sub4" title={<span><Icon type="setting" /><span>安全中心</span></span>}>
-                <Menu.Item key="9">安全验证</Menu.Item>
-                <Menu.Item key="10">修改密码</Menu.Item>
+                <Menu.Item key="safety">安全验证</Menu.Item>
+                <Menu.Item key="password">修改密码</Menu.Item>
               </SubMenu>
             </Menu>
           </div>

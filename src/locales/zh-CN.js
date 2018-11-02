@@ -123,6 +123,7 @@ export default {
   "menu.clubAdmin.all": "社区后台管理",
   "menu.clubAdmin.post": "文章管理",
   "menu.clubAdmin.post.list": "文章列表",
+  "menu.clubAdmin.post.add": "添加文章",
   "menu.clubAdmin.tag": "标签管理",
   "menu.clubAdmin.tag.list": "标签列表",
   "menu.mall.post": "发布文章",
